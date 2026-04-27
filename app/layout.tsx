@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
-
+import '@/app/ui/global.css';
+ 
 export const metadata: Metadata = {
   title: {
     template: '%s | Acme Dashboard',
@@ -9,7 +10,6 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh')
 };
 
-import '@/app/ui/global.css'; 
 import { inter } from '@/app/ui/fonts';
 export default function RootLayout({
   children,
